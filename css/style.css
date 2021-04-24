@@ -11,6 +11,7 @@
 
 body{
     background-color: #010B23;
+    overflow-x: hidden;
 }
 
 .navbar{
@@ -38,6 +39,7 @@ body{
 
 .navlinks{
     display: none;
+    align-items: center;
 }
 
 .navbar-brand p{
@@ -46,8 +48,9 @@ body{
 }
 
 .navlinks li{
-    padding: 20px;
+    padding: 15px;
     list-style: none;
+    width: 100%;
 }
 
 .links{
@@ -58,7 +61,7 @@ body{
 /* hamburger */
 
 .burger{
-
+    display: block;
 }
 
 .line1, .line2, .line3{
@@ -84,9 +87,119 @@ body{
 
 .navlinks.navSlide{
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+}
+
+.presentation{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+
+.intro-header, .c-text{
+    margin-top: 20px;
+}
+
+.large{
+    font-size: 3rem;
+}
+
+.medium{
+    font-size: 1rem;
+}
+
+.illustration img{
+    width: 90%;
+}
+
+input[type="button"]{
+    padding: 15px;
+    width: 100%;
+    margin-top: 25px;
+    background-color: #43A047;
+    border-radius: 10px;
+    color: white;
+    font-size: 1.2rem;
 }
 
 
+/* DESKTOP STYLES */
+@media screen and (min-width: 800px) {
+    .burger{
+        display: none;
+    }
 
+    .navlinks{
+        display: flex;
+    }
+
+    .navlinks li{
+        width: auto;
+    }
+
+    .presentation{
+        text-align: left;
+        /* display: flex; */
+        /* flex-wrap: wrap; */
+    }
+
+    .illustration{
+        float: right;
+        margin: auto;
+    }
+
+    .illustration {
+        width: 50%;
+        /* height: 100vh; */
+        /* border: 1px solid white; */
+        margin-top: -300px;
+    }
+
+    .illustration img{
+        width: 100%;
+    }
+
+    .intro-header{
+        margin-top: 5%;
+        width: 45%;
+    }
+
+    .large{
+        font-size: 5rem;
+    }
+
+    .medium{
+        font-size: 1.3rem;
+    }
+
+    .c-text{
+        /* margin-top: auto; */
+        float: left;
+        width: 45%;
+        /* border: 1px solid white; */
+    }
+
+    input[type="button"]{
+        animation: buttAnim 2.3s linear infinite alternate;
+    }
+
+    #createacc{
+        border: 1px solid transparent;
+        padding: 15px;
+        background-color: #43A047;
+        border-radius: 10px;
+    }
+    
+}
+
+@keyframes buttAnim{
+    from{
+        transform: translateY(-10px);
+    }
+
+    to{
+        transform: translateY(0px);
+    }
+}
 
