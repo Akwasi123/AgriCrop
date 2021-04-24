@@ -12,84 +12,9 @@
 body{
     background-color: #010B23;
     overflow-x: hidden;
+    position: relative;
 }
 
-.navbar{
-    display: flex;
-    width: 100%;
-}
-
-.container, .navbar-brand{
-    display: flex;
-    align-items: center;
-}
-
-.container{
-    padding-top: 10px;
-    width: 90%;
-    margin: auto;
-    flex-wrap: wrap;
-    /* justify-content: space-around; */
-    /* border: 1px solid white; */
-}
-
-.navbar-brand{
-    flex: 1;
-}
-
-.navlinks{
-    display: none;
-    align-items: center;
-}
-
-.navbar-brand p{
-    padding: 0 10px;
-    font-size: 1.5rem;
-}
-
-.navlinks li{
-    padding: 15px;
-    list-style: none;
-    width: 100%;
-}
-
-.links{
-    color: white;
-    text-decoration: none;
-}
-
-/* hamburger */
-
-.burger{
-    display: block;
-}
-
-.line1, .line2, .line3{
-    margin: 3px;
-    padding: 3px;
-    width: 35px;
-    background-color: white;
-    transition: all 0.3s ease;
-}
-
-.resNav .line1{
-    transform: rotate(45deg) translate(5px, 8px);
-}
-
-.resNav .line2{
-    transform: translateX(-500px);
-    opacity: 0;
-}
-
-.resNav .line3{
-    transform: rotate(-45deg) translate(5px, -8px);
-}
-
-.navlinks.navSlide{
-    display: flex;
-    flex-wrap: wrap;
-    /* flex-direction: column; */
-}
 
 .presentation{
     /* padding: 20px; */
@@ -129,18 +54,6 @@ input[type="button"]{
 
 /* DESKTOP STYLES */
 @media screen and (min-width: 800px) {
-    .burger{
-        display: none;
-    }
-
-    .navlinks{
-        display: flex;
-    }
-
-    .navlinks li{
-        width: auto;
-    }
-
     .presentation{
         text-align: left;
         /* display: flex; */

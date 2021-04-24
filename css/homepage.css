@@ -1,0 +1,39 @@
+
+.mb-content{
+    /* height: 100vh; */
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.heading{
+    font-size: 2.3rem;
+    padding: 10px;
+}
+
+.illustration-2 img{
+    width: 80%;
+}
+
+/* DESKTOP STYLES */
+
+@media screen and (min-width: 800px) {
+    .mb-content{
+        display: flex;
+        align-items: center;
+    }
+
+    .ab-content{
+        order: 2;
+        flex: 1;
+        text-align: left;
+    }
+
+    .heading{
+        font-size: 3rem;
+        text-align: left;
+        padding: 0px;
+        margin-bottom: 50px;
+    }
+}
