@@ -2,12 +2,13 @@ body{
     position: relative;
 }
 
-.mb-content, .v-values{
+.mb-content, .v-values, .as-content{
     /* height: 100vh; */
     width: 90%;
     margin: auto;
     text-align: center;
     margin-top: 50px;
+    margin-bottom: 100px;
 }
 
 .heading, .ab-heading{
@@ -20,7 +21,7 @@ body{
     width: 60%;
 }
 
-.value{
+.value, .service{
     margin: 30px;
 }
 
@@ -31,26 +32,48 @@ body{
 .text-content .medium{
     margin: 10px;
     font-size: 1.3rem;
+    text-align: center;
 }
 
 .bulb1{
-    width: 80%;
+    width: 70%;
     position: absolute;
-    top: 62%;
-    left: 10%;
+    top: 1600px;
+    left: 15%;
     opacity: 0.3;
     z-index: -3;
 }
 
 .bulb2{
-    width: 80%;
+    width: 70%;
     position: absolute;
-    bottom: -2%;
-    left: 10%;
+    bottom: 1200px;
+    left: 15%;
     opacity: 0.3;
     z-index: -3;
     transform: rotate(180deg);
 }
+
+.sc-content{
+    width: 90%;
+    margin: auto;
+}
+
+
+.sc-container{
+    text-align: center;
+}
+
+.service{
+    margin-bottom: 40px;
+}
+
+.service img{
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+
 
 /* DESKTOP STYLES */
 
@@ -83,7 +106,7 @@ body{
         text-align: left;
     }
 
-    .v-container{
+    .v-container, .sc-container{
         display: flex;
         align-items: center;
     }
@@ -112,6 +135,12 @@ body{
 
     .text-content .medium{
         text-align: left;
+        padding: 0;
+        margin: 0 0 10px 0;
+    }
+
+    .tx .medium{
+        text-align: center;
         padding: 0;
         margin: 0 0 10px 0;
     }

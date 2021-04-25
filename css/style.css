@@ -29,10 +29,12 @@ body{
 }
 
 .large{
+    text-align: center;
     font-size: 3rem;
 }
 
 .medium{
+    text-align: center;
     font-size: 1rem;
 }
 
@@ -82,11 +84,16 @@ input[type="button"]{
     }
 
     .large{
+        text-align: left;
         font-size: 5rem;
     }
 
     .medium{
         font-size: 1.3rem;
+    }
+
+    .medium-left{
+        text-align: left;
     }
 
     .c-text{
