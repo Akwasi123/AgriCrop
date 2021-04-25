@@ -1,5 +1,8 @@
+body{
+    position: relative;
+}
 
-.mb-content{
+.mb-content, .ab-values{
     /* height: 100vh; */
     width: 90%;
     margin: auto;
@@ -8,12 +11,45 @@
 }
 
 .heading{
+    text-align: center;
     font-size: 2.3rem;
     padding: 10px;
 }
 
 .illustration-2 img{
     width: 80%;
+}
+
+.value{
+    margin: 30px;
+}
+
+.value img{
+    margin: 20px;
+}
+
+.text-content .medium{
+    margin: 10px;
+    font-size: 1.3rem;
+}
+
+.bulb1{
+    width: 80%;
+    position: absolute;
+    top: 62%;
+    left: 10%;
+    opacity: 0.3;
+    z-index: -3;
+}
+
+.bulb2{
+    width: 80%;
+    position: absolute;
+    bottom: -2%;
+    left: 10%;
+    opacity: 0.3;
+    z-index: -3;
+    transform: rotate(180deg);
 }
 
 /* DESKTOP STYLES */
@@ -36,4 +72,5 @@
         padding: 0px;
         margin-bottom: 50px;
     }
+
 }
