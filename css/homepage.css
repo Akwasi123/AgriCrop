@@ -2,7 +2,7 @@ body{
     position: relative;
 }
 
-.mb-content, .ab-values{
+.mb-content, .v-values{
     /* height: 100vh; */
     width: 90%;
     margin: auto;
@@ -10,14 +10,14 @@ body{
     margin-top: 50px;
 }
 
-.heading{
+.heading, .ab-heading{
     text-align: center;
     font-size: 2.3rem;
     padding: 10px;
 }
 
 .illustration-2 img{
-    width: 80%;
+    width: 60%;
 }
 
 .value{
@@ -58,19 +58,63 @@ body{
     .mb-content{
         display: flex;
         align-items: center;
+        margin-top: 50px;
     }
 
     .ab-content{
         order: 2;
         flex: 1;
         text-align: left;
+        width: 50%;
     }
+
+    .illustration-2{
+        width: 50%;
+    }
+
 
     .heading{
         font-size: 3rem;
-        text-align: left;
         padding: 0px;
         margin-bottom: 50px;
     }
+
+    .ab-heading{
+        text-align: left;
+    }
+
+    .v-container{
+        display: flex;
+        align-items: center;
+    }
+
+    .values{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        text-align: left;
+        width: 70%;
+    }
+
+    .value{
+        display: flex;
+        align-items: center;
+    }
+    
+    .bulb2{
+        display: none;
+    }
+
+    .bulb1{
+        position: static;
+        width: 30%;
+    }
+
+    .text-content .medium{
+        text-align: left;
+        padding: 0;
+        margin: 0 0 10px 0;
+    }
+
 
 }
