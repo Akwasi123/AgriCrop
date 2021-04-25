@@ -21,6 +21,10 @@ body{
     width: 60%;
 }
 
+.as-section .illustration-2 img{
+    width: 90%;
+}
+
 .value, .service{
     margin: 30px;
 }
@@ -33,6 +37,11 @@ body{
     margin: 10px;
     font-size: 1.3rem;
     text-align: center;
+}
+
+.text-content .large{
+    font-size: 1.5rem;
+    margin: 10px;
 }
 
 .bulb1{
@@ -119,7 +128,7 @@ body{
         width: 70%;
     }
 
-    .value{
+    .value, .as-section{
         display: flex;
         align-items: center;
     }
@@ -145,5 +154,22 @@ body{
         margin: 0 0 10px 0;
     }
 
+    .as-section .illustration-2{
+        order: 2;
+    }
+
+    .as-section .illustration-2 img{
+        width: 100%;
+        margin: 60px;
+    }
+
+    .as-section .text-content{
+        width: 50%;
+    }
+
+    .text-content .large{
+        font-size: 3rem;
+        margin-bottom: 40px;
+    }
 
 }
