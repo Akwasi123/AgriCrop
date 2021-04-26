@@ -82,7 +82,16 @@ body{
     margin-bottom: 20px;
 }
 
+.join-us{
+    background-color: #C9540F;
+    /* width: 100%; */
+}
 
+.join-us .inner{
+    width: 90%;
+    margin: auto;
+    padding: 10px 0 20px 0;
+}
 
 /* DESKTOP STYLES */
 
@@ -132,6 +141,14 @@ body{
         display: flex;
         align-items: center;
     }
+
+    .join-us{
+        height: 100vh;
+    }
+
+    .as-section{
+        justify-content: center;
+    }
     
     .bulb2{
         display: none;
@@ -163,8 +180,12 @@ body{
         margin: 60px;
     }
 
+    .join-us .illustration img{
+        width: 85%;
+    }
+
     .as-section .text-content{
-        width: 50%;
+        width: 40%;
     }
 
     .text-content .large{
