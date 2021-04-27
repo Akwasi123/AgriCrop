@@ -82,6 +82,25 @@ body{
     margin-bottom: 20px;
 }
 
+
+#login{
+    background-image: url("../assets/img/icons/Icon\ open-account-login.svg");
+    background-repeat: no-repeat;
+    background-size: 8%;
+    background-position: 65% 50%;
+    padding-left: 120px;
+    text-align: left;
+}
+
+#donate{
+    background-image: url("../assets/img/icons/Icon\ awesome-donate.svg");
+    padding-left: 60px;   
+    background-repeat: no-repeat;
+    background-size: 8%;
+    background-position: 75% 50%;
+    text-align: left;
+}
+
 .join-us{
     background-color: #C9540F;
     /* width: 100%; */
@@ -270,6 +289,11 @@ input[type="text"]:focus{
     .as-section .illustration-2 img{
         width: 100%;
         margin: 60px;
+    }
+
+    #donate, #login{
+        text-align: center;
+        padding-left: 0;
     }
 
     .join-us .illustration img{
