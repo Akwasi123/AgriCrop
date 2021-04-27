@@ -103,6 +103,10 @@ footer{
     align-items: center;
 }
 
+.f-links{
+    margin-bottom: 30px;
+}
+
 .f-heading{
     margin: 30px auto;
 }
@@ -130,6 +134,13 @@ footer{
 
 .left-links p, .right-links p{
     margin-bottom: 25px;
+    color: white;
+    text-decoration: none;
+}
+
+.left-links a, .right-links a{
+    color: white;
+    text-decoration: none;
 }
 
 .msg{
@@ -145,7 +156,16 @@ footer{
 input[type="text"]{
     width: 100%;
     padding: 5px;
-    outline: none !important;
+    border: hidden;
+    border-bottom: 1px solid white;
+    outline: none;
+    background-color: #010B23;
+    color: white;
+    font-size: 1.1rem;
+}
+
+input[type="text"]:focus{
+    border-color: #C9540F;
 }
 
 .subscription input[type="button"]{
