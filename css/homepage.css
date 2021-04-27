@@ -93,6 +93,77 @@ body{
     padding: 10px 0 20px 0;
 }
 
+footer{
+    width: 90%;
+    margin: auto;
+}
+
+.f-heading, .f-links{
+    display: flex;
+    align-items: center;
+}
+
+.f-heading{
+    margin: 30px auto;
+}
+
+.left-content .medium{
+    font-size: 2rem;
+}
+
+.hide{
+    display: none;
+}
+
+.socials{
+    text-align: right;
+}
+
+.socials img{
+    width: 20%;
+    padding: 8px;
+}
+
+.left-links{
+    flex: 1;
+}
+
+.left-links p, .right-links p{
+    margin-bottom: 25px;
+}
+
+.msg{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.msg img{
+    margin-right: 10px;
+}
+
+input[type="text"]{
+    width: 100%;
+    padding: 5px;
+    outline: none !important;
+}
+
+.subscription input[type="button"]{
+    margin-bottom: 50px;
+}
+
+.copyright{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.copyright img{
+    margin-right: 10px;
+}
+
+
 /* DESKTOP STYLES */
 
 @media screen and (min-width: 800px) {
@@ -157,6 +228,7 @@ body{
     .bulb1{
         position: static;
         width: 30%;
+        opacity: 1;
     }
 
     .text-content .medium{
