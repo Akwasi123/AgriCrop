@@ -23,7 +23,7 @@ body{
 
 .h-text{
     font-size: 3rem;
-    margin: 50px auto 20px auto;
+    margin: 30px auto 20px auto;
 }
 
 .slogan{
@@ -78,7 +78,7 @@ input[type="button"]{
     color: #FFBF55;
 }
 
-.right-side{
+.right-side, .signup{
     display: none;
 }
 /* DESKTOP STYLES */
@@ -92,13 +92,32 @@ input[type="button"]{
         background-size: 100%;
     }
 
+    .signup{
+        display: flex;
+        /* border: 1px solid #FFBF55; */
+        width: 50%;
+        background-image: url("../assets/img/illustration/signup-bg.svg");
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+
+    .su-text{
+        margin: 10px;
+    }
+
     .right-side img{
         width: 100%;
     }
     
     .left-side{
         width: 50%;
-        padding: 20px;
+        padding: 40px;
+    }
+
+    .su-side{
+        width: 50%;
+        padding: 70px auto 0 auto;
+        margin-top: -70px;
     }
 
     .login-plaque{
