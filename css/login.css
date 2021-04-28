@@ -64,7 +64,37 @@ input[type="button"]{
     /* text-decoration: none; */
     color: #FFBF55;
 }
+
+.right-side{
+    display: none;
+}
 /* DESKTOP STYLES */
 @media screen and (min-width: 800px){
+    .right-side{
+        display: flex;
+        /* border: 1px solid #FFBF55; */
+        width: 50%;
+        background-image: url("../assets/img/illustration/other-bg.svg");
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+
+    .right-side img{
+        width: 100%;
+    }
+    
+    .left-side{
+        width: 50%;
+        padding: 20px;
+    }
+
+    .login-plaque{
+        display: flex;
+        /* align-items: center; */
+        width: 100%;
+        margin: auto;
+        /* border: 1px solid white; */
+    }
+
 
 }
