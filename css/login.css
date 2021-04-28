@@ -22,31 +22,48 @@ body{
 
 .h-text{
     font-size: 3rem;
-    margin: 30px 0px;
+    margin: 50px auto 20px auto;
 }
 
 .slogan{
     font-size: 1.2rem;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .field{
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 }
 
 .field label{
     display: block;
     width: 100%;
     text-align: left;
+    margin-bottom: 10px;
 }
 
 .field input[type="text"], .field input[type="password"]{
     width: 100%;
-    padding: 10px;
+    padding: 15px;
 
 }
 
+input[type="button"]{
+    padding: 18px;
+    width: 100%;
+    border-radius: 10px;
+    background-color: #43A047;
+    color: white;
+    font-size: 1.1rem
+}
 
+.ques p{
+    margin: 15px;
+}
+
+.ques p a{
+    /* text-decoration: none; */
+    color: #FFBF55;
+}
 /* DESKTOP STYLES */
 @media screen and (min-width: 800px){
 
