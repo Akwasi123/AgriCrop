@@ -69,6 +69,29 @@ footer a{
 }
 
 
+.footer{
+    width: 100%;
+    background-color: rgb(241, 240, 240);
+}
+
+.t-textbox{
+    background-color: rgb(241, 240, 240);
+}
+
+input[type="text"]{
+    width: 100%;
+    padding: 5px;
+    border: hidden;
+    border-bottom: 1px solid black;
+    outline: none;
+    color: black;
+    font-size: 1.1rem;
+}
+
+input[type="text"]:focus{
+    border-color: #C9540F;
+}
+
 /* DESKTOP STYLES */
  @media screen and (min-width: 800px) {
     .member{

@@ -154,21 +154,6 @@ footer{
     margin-right: 10px;
 }
 
-input[type="text"]{
-    width: 100%;
-    padding: 5px;
-    border: hidden;
-    border-bottom: 1px solid white;
-    outline: none;
-    background-color: #010B23;
-    color: white;
-    font-size: 1.1rem;
-}
-
-input[type="text"]:focus{
-    border-color: #C9540F;
-}
-
 .subscription input[type="button"]{
     margin-bottom: 50px;
 }
