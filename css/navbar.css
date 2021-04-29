@@ -86,6 +86,105 @@
     /* flex-direction: column; */
 }
 
+/* footer styles */
+footer{
+    width: 90%;
+    margin: auto;
+}
+
+.f-heading, .f-links{
+    display: flex;
+    align-items: center;
+}
+
+.f-links{
+    margin-bottom: 30px;
+}
+
+.f-heading{
+    margin: 30px auto;
+}
+
+.left-content .medium{
+    font-size: 2rem;
+}
+
+.hide{
+    display: none;
+}
+
+.socials{
+    text-align: right;
+}
+
+.socials img{
+    width: 20%;
+    padding: 8px;
+}
+
+.left-links{
+    flex: 1;
+}
+
+.left-links p, .right-links p{
+    margin-bottom: 25px;
+    color: white;
+    text-decoration: none;
+}
+
+.left-links a, .right-links a{
+    color: white;
+    text-decoration: none;
+}
+
+.t-help a, .t-help a{
+    color: black;
+    text-decoration: none;
+}
+
+
+
+.msg{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.msg img{
+    margin-right: 10px;
+}
+
+input[type="text"]{
+    width: 100%;
+    padding: 5px;
+    border: hidden;
+    border-bottom: 1px solid white;
+    outline: none;
+    background-color: #010B23;
+    color: white;
+    font-size: 1.1rem;
+}
+
+input[type="text"]:focus{
+    border-color: #C9540F;
+}
+
+.subscription input[type="button"]{
+    margin-bottom: 50px;
+}
+
+.copyright{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.copyright img{
+    margin-right: 10px;
+}
+
+
 
 @media screen and (min-width: 800px) {
     .burger{
@@ -102,5 +201,43 @@
 
     .navbar{
         position: none;
+    }
+
+    #createacc{
+        border: 1px solid transparent;
+        padding: 15px;
+        background-color: #43A047;
+        border-radius: 10px;
+    }
+
+    #createacc a{
+        color: white;
+    }
+
+    footer{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .f-heading{
+        flex-basis: 100%;
+    }
+
+    .left-content{
+        flex: 1;
+    }
+
+    .f-links{
+        flex: 1;
+    }
+
+    .left-links{
+        flex: 0.5;
+    }
+
+    .socials img{
+        width: 15%;
+        padding: 8px;
     }
 }

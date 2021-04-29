@@ -107,12 +107,7 @@ input[type="button"]{
         animation: buttAnim 2.3s linear infinite alternate;
     }
 
-    #createacc{
-        border: 1px solid transparent;
-        padding: 15px;
-        background-color: #43A047;
-        border-radius: 10px;
-    }
+    
     
 }
 
