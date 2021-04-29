@@ -2,7 +2,6 @@
 .navbar{
     display: flex;
     width: 100%;
-    background-color: #010B23;
 }
 
 .container, .navbar-brand{
@@ -45,10 +44,19 @@
     text-decoration: none;
 }
 
+.t-link{
+    color: black;
+    text-decoration: none;
+}
+
 /* hamburger */
 
 .burger{
     display: block;
+}
+
+.team .line1, .team .line2, .team .line3{
+    background-color: black;color: black;
 }
 
 .line1, .line2, .line3{
