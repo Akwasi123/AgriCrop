@@ -26,6 +26,10 @@ body{
     margin: 30px;
 }
 
+.c-greet{
+    margin-bottom: 20px;
+}
+
 form{
     background-color: white;
     border-radius: 10px;
@@ -58,7 +62,7 @@ input[type="text"]:focus{
 textarea{
     width: 100%;
     border-radius: 5px;
-    /* border: 0; */
+    resize: none;
     padding: 15px;
     border-color: rgba(169, 169, 169, 0.3);
 }
@@ -80,4 +84,59 @@ input[type="button"]{
     color: white;
     font-size: 1rem;
     border: transparent;
+}
+
+.pnum, .mail, .socials{
+    display: none;
+}
+
+/* DESKTOP STYLES */
+
+@media screen and (min-width: 800px) {
+    .contact{
+        display: flex;
+        /* align-items: center; */
+        justify-content: center;
+        margin-top: 55px;
+    }
+
+    .left{
+        width: 50%;
+        text-align: left;
+    }
+
+    .left .get{
+        margin-left: 0;
+        font-size: 3rem;
+    }
+
+    .c-greet{
+        width: 50%;
+    }
+
+    .pnum, .mail, .socials{
+        display: flex;
+        align-items: center;
+        margin: 50px auto;
+        /* border: 1px solid white; */
+    }
+
+    .right{
+        width: 40%;
+    }
+
+    .pnum img, .mail img{
+        margin-right: 20px;
+    }
+    
+    .socials{
+        max-width: 60%;
+        margin-left: 0;
+    }
+
+    .socials img{
+        margin-right: 30px;
+    }
+
+    
 }
