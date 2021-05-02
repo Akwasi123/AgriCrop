@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.jumbotron{
+    max-width: 100%;
+    height: fit-content;
+    /* background-color: darkgrey; */
+    margin: 10px auto;
+    object-fit: contain;
+}
+
+.jumbotron img{
+    width: 100%;
+}
