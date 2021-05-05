@@ -120,7 +120,7 @@ input[type="button"]{
     .su-side{
         width: 50%;
         padding: 70px auto 0 auto;
-        margin-top: -70px;
+        margin-top: -20px;
     }
 
     .login-plaque{

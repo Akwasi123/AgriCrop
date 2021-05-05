@@ -26,6 +26,12 @@
 
 .navbar-brand{
     flex: 1;
+    text-decoration: none;
+    color: white;
+}
+
+.black{
+    color: black;
 }
 
 .navlinks{
