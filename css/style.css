@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 :root{
     font-size: 16px;
     color: white;
@@ -12,15 +16,14 @@
 body{
     background-color: #010B23;
     overflow-x: hidden;
-    position: relative;
-    scroll-behavior: smooth;
+    /* position: relative; */
 }
 
 
 .presentation{
     display: block;
     width: 90%;
-    margin: auto;
+    margin: 100px auto;
     text-align: center;
 }
 
