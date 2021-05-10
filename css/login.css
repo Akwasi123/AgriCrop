@@ -1,135 +1,177 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-
-body{
-    background-color: #010B23;
-    position: relative;
+html {
+  scroll-behavior: smooth;
 }
 
-:root{
-    font-size: 16px;
-    color: white;
+body {
+  font-size: 16px;
+  height: 100vh;
+  color: black;
 }
 
-.ag-login{
-    width: 90%;
-    margin: auto;
-    text-align: center;
+.login-container {
+  display: flex;
+  padding: 0 20px;
+  margin-top: 0px;
 }
 
-.h-text{
-    font-size: 3rem;
-    margin: 30px auto 20px auto;
+.left {
+  display: none;
+  /* border: 1px solid green; */
+  height: 100vh;
+  width: 30%;
+  background-color: #010b23;
+  padding: 30px;
+  color: white;
 }
 
-.slogan{
-    font-size: 1.2rem;
-    margin-bottom: 20px;
+.brand {
+  display: flex;
+  align-items: center;
 }
 
-.field{
-    margin-bottom: 40px;
+.brand p {
+  font-size: 2rem;
+  margin-left: 20px;
 }
 
-.field label{
+.log-msg {
+  font-size: 1.5rem;
+  margin-top: 20%;
+  margin-bottom: 50%;
+}
+
+.break {
+  display: none;
+}
+
+.right {
+  background-color: #fff;
+  width: 100%;
+  height: 100vh;
+  text-align: left;
+  margin: auto;
+}
+
+.others {
+  width: 90%;
+  margin: auto;
+  margin-top: 40px;
+}
+
+.heading {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.sub-text {
+  margin-bottom: 20px;
+}
+
+form {
+  /* border: 1px solid black; */
+  margin-top: 30px;
+}
+
+.field label {
+  width: 100%;
+  padding: 10px 0px;
+}
+
+.field input {
+  padding: 20px;
+  width: 100%;
+  margin-left: -12px;
+}
+
+.field {
+  margin-bottom: 30px;
+}
+
+.kp {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.kp input[type="checkbox"] {
+  transform: scale(1.5);
+}
+
+.kp p {
+  margin-left: 10px;
+}
+
+input[type="button"] {
+  padding: 15px;
+  width: 94%;
+  border-radius: 8px;
+  border: none;
+  background-color: #010b23;
+  color: white;
+  margin-left: -12px;
+}
+
+.btn {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.ask {
+  text-align: center;
+}
+
+/* Desktop styles */
+@media screen and (min-width: 50em) {
+  .break {
     display: block;
-    width: 100%;
+  }
+
+  .login-container {
+    padding: 0;
+    margin-top: 0;
+  }
+
+  .left {
+    display: block;
+  }
+
+  .field input {
+    width: 70%;
+  }
+
+  input[type="button"] {
+    width: 48%;
+  }
+
+  .right {
+    width: 70%;
+    padding: 0px 0px;
+  }
+
+  .btn {
     text-align: left;
-    margin-bottom: 10px;
-    padding: 0px 15px;
-}
+    margin-left: 12px;
+  }
 
-.field input[type="text"], .field input[type="password"]{
-    width: 100%;
-    padding: 15px;
-    text-indent: 20px;
-    border-radius: 8px;
-    border: 0;
-}
-
-
-.field i{
-    position: absolute;
-}
-
-.icon {
-    padding: 15px;
-    color: rgb(49, 0, 128);
-    width: 70px;
+  .ask {
     text-align: left;
-}
+  }
 
-input[type="button"]{
-    padding: 18px;
-    width: 100%;
-    border-radius: 10px;
-    background-color: #43A047;
-    color: white;
-    font-size: 1.1rem
-}
+  .others {
+    padding: 60px 50px;
+  }
 
-.ques p{
-    margin: 15px;
-}
+  .others.su {
+    padding: 10px;
+  }
 
-.ques p a{
-    /* text-decoration: none; */
-    color: #FFBF55;
-}
-
-.right-side, .signup{
+  .logo {
     display: none;
-}
-/* DESKTOP STYLES */
-@media screen and (min-width: 800px){
-    .right-side{
-        display: flex;
-        /* border: 1px solid #FFBF55; */
-        width: 50%;
-        background-image: url("../assets/img/illustration/other-bg.svg");
-        background-repeat: no-repeat;
-        background-size: 100%;
-    }
-
-    .signup{
-        display: flex;
-        /* border: 1px solid #FFBF55; */
-        width: 50%;
-        background-image: url("../assets/img/illustration/signup-bg.svg");
-        background-repeat: no-repeat;
-        background-size: 100%;
-    }
-
-    .su-text{
-        margin: 10px;
-    }
-
-    .right-side img{
-        width: 100%;
-    }
-    
-    .left-side{
-        width: 50%;
-        padding: 40px;
-    }
-
-    .su-side{
-        width: 50%;
-        padding: 70px auto 0 auto;
-        margin-top: -20px;
-    }
-
-    .login-plaque{
-        display: flex;
-        /* align-items: center; */
-        width: 100%;
-        margin: auto;
-        /* border: 1px solid white; */
-    }
-
-
+  }
 }
