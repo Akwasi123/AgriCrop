@@ -4,9 +4,22 @@
     box-sizing: border-box;
 }
 
+body{
+    position: relative;
+}
+
 .navbar{
     display: flex;
     width: 100%;
+    background-color: #010B23;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar.nav-white{
+    position: relative;
+    background-color: white;
 }
 
 .container, .navbar-brand{
@@ -16,12 +29,14 @@
 }
 
 .container{
+    position: relative;
     padding-top: 10px;
     width: 90%;
     margin: auto;
     flex-wrap: wrap;
     /* justify-content: space-around; */
     /* border: 1px solid white; */
+    /* background-color: #43A047; */
 }
 
 .navbar-brand{
