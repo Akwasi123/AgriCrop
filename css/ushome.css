@@ -133,7 +133,7 @@ body {
 
 @media screen and (min-width: 50em) {
   .menu img {
-    width: 40%;
+    width: 30%;
   }
 
   .menu:hover {
