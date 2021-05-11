@@ -121,7 +121,7 @@
                     }
  
                     // Close connection
-                    mysqli_close($link);
+                    mysqli_close($database);
                     ?>
                 </div>
             </div>        
