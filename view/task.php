@@ -9,9 +9,9 @@
     <link rel="stylesheet" href="../css/ushome.css">
 </head>
 <body>
-    
+
     <!-- end of navigation bar -->
-    
+
     <!-- page content -->
     <div class="page-content">
         <!-- sidebar -->
@@ -31,7 +31,7 @@
                 <img src="../assets/img/icons/icons8-buy-100.png" alt="">
                 <p>Store</p>
             </div>
-            
+
             <div class="menu">
                 <img src="../assets/img/icons/icons8-increase-profits-100.png" alt="">
                 <p>Activity</p>
@@ -58,19 +58,39 @@
             </div>
 
             <div class="greeting">
-                <p>Hello Akwasi</p>
+                <p><a href="">Add new task</a></p>
             </div>
 
             <!-- tasks pane -->
-            <div class="tasks">
-                
+            <div class="main-task">
+            <div class="tasks-one">
+                <div>Task</div>
+                <div>Status</div>
             </div>
-            <div class="tasks">
 
-            </div>
-            <div class="tasks">
+ <?php
+require '../dbCredentials.php';
 
-            </div>
+//The database connection is created.
+
+$database = mysqli_connect(SERVER, USERNAME, PASSWD, DATABASE) or die(mysqli_error($database));
+
+//The query is being initiated.
+$query = mysqli_query($database, "SELECT * FROM task");
+
+//This fetches all rows which match the query.
+while ($row = mysqli_fetch_array($query)){
+        echo '<div class="main-content-task">';
+        echo '<div>';
+        echo $row['title'].'</div>';
+
+        echo '<div>';
+        echo $row['status'].'</div>';
+        echo '</div>';
+}
+?>
+
+        </div>
 
             <!-- footer -->
             <div class="copyright">
@@ -80,6 +100,6 @@
         </div>
     </div>
 
-    
+
 </body>
 </html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgriCrop - User</title>
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/ushome.css">
+    <link rel="stylesheet" href="../css/addNewTask.css">
+</head>
+<body>
+
+    <!-- end of navigation bar -->
+
+    <!-- page content -->
+    <div class="form-content">
+
+
+        <!-- right content -->
+        <div class="addNewTask-right-side">
+            <!-- topbar -->
+            <div class="topbar">
+                <div class="settings">
+                    <img src="../assets/img/icons/icons8-settings-100.png" alt="">
+                </div>
+            </div>
+
+
+        <div class="task-form">
+            <form action="addNewTask.php" name="addtask" id="addtask" method="POST" enctype="multipart/form-data">
+            <div class="row">
+                <label for="fname">Title</label>
+                <div class="input">
+                <input type="text" id="title" name="title" placeholder="Enter your task title.">
+                </div>
+            </div>
+
+            <div class="row">
+                <label for="datee">Date</label>
+                <div class="input">
+                <input type="date" id="duedate" name="duedate">
+                </div>
+            </div>
+
+            <div class="row">
+                <label for="lname">Assignee</label>
+                <div class="input">
+                <input type="text" id="assignee" name="assignee" placeholder="Enter the assignee here.">
+                </div>
+            </div>
+
+
+            <div class="row">
+                <label for="subject">Description</label>
+                <div class="input">
+                <textarea id="description" name="description" placeholder="Write your description here."></textarea>
+                </div>
+            </div>
+
+            <div class="input">
+                <button type="submit" name="submit" value="submit">Submit</button>
+            </div>
+
+            </form>
+
+
+
+        </div>
+
+        </div>
+    </div>
+        <!-- footer -->
+        <div class="footer-style">
+                <img src="../assets/img/icons/Icon awesome-copyright.svg" alt="">
+                <p>2021 AgriCrop</p>
+        </div>
+
+
+</body>
+</html>
