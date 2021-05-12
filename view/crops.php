@@ -95,7 +95,7 @@
                                     echo "<tr>";
                                         echo "<td>" . $row['id'] . "</td>";
                                         echo "<td>" . $row['name'] . "</td>";
-                                        echo "<td>" . $row['plantspacing'] . "</td>";
+                                        echo "<td>" . $row['plantingspacing'] . "</td>";
                                         echo "<td>" . $row['plantdate'] . "</td>";
                                         echo "<td>" . $row['harvestdate'] . "</td>";
                                         echo "<td>";
