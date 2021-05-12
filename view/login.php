@@ -1,3 +1,4 @@
+<?php include ('validation.php')?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -80,15 +81,17 @@
                 <p class="sub-text"><strong>Login to enjoy the full agricultural experience</strong></p>
     
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat,<br class="break"> corrupti! Modi voluptate </p>
-                <form action="">
+                <form action="" method="post">
+                <?php include ('errors.php'); ?>
+
                     <div class="field">
                         <label for="">Username or email</label><br>
-                        <input type="text" name="" id="">
+                        <input type="text" name="email" id="email">
                     </div>
     
                     <div class="field">
                         <label for="">Password</label><br>
-                        <input type="password" name="" id="">
+                        <input type="password" name="Password" id="Password">
                     </div>
     
                     <div class="kp">
@@ -98,7 +101,7 @@
     
                     <!-- button -->
                     <div class="btn">
-                        <input type="button" value="Login">
+                        <input type="Submit" name="Login" id="Login" value="Login">
                     </div>
                     <p class="ask">Don't have an account? Create one <a href="">here</a></p>
                 </form>

@@ -1,3 +1,5 @@
+<?php include ('validation.php')?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,6 +10,43 @@
     <link rel="stylesheet" href="../css/login.css">
     <title>AgriCrop-Sign Up</title>
     <script src="https://use.fontawesome.com/dfe99fdb12.js"></script>
+
+    <script type="text/javascript">
+        function valid(){
+            var email=document.getElementById("email");
+            var password_1=document.getElementById("password_1");
+            var password_2=document.getElementById("password_2");
+
+            if (email.value.trim()==("")){
+            alert("Fill Email");
+            return false;
+            }
+            else if (! email.value.match(/^[a-zA-Z0-9.!#$%&'+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)$/)) {
+            alert("gmail only");
+            return false;
+            }
+
+            else if (password_1.value.trim()==("")){
+            alert("Fill Password");
+            return false;
+            }
+            else if (! password_1.value.match(/^(?=.*[0-9]+.*)(?=.*[a-zA-Z]+.*)[0-9a-zA-Z]{6,}$/)){
+            alert("Password must contain at least one letter, at least one number, and be longer than six charaters");
+            return false;
+            }
+            else if (password_2.value.trim()==("")){
+            alert("Repeat Password");
+            return false;
+            }
+            
+            else{  
+                return true;
+            }
+        }
+        
+    
+        </script>
+    
 </head>
 <body>
 
@@ -80,20 +119,21 @@
                 <p class="sub-text"><strong>Login to enjoy the full agricultural experience</strong></p>
     
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat,<br class="break"> corrupti! Modi voluptate </p>
-                <form action="">
-                    <div class="field">
+                <form onsubmit="return valid()"  action="" method="post">  
+                <?php include ('errors.php'); ?>
+                 <div class="field">
                         <label for="">Email</label><br>
-                        <input type="text" name="" id="">
+                        <input type="text" name="email" id="email">
                     </div>
     
                     <div class="field">
                         <label for="">Password</label><br>
-                        <input type="password" name="" id="">
+                        <input type="password" name="password_1" id="password_1">
                     </div>
 
                     <div class="field">
                         <label for="">Confirm Password</label><br>
-                        <input type="password" name="" id="">
+                        <input type="password" name="password_2" id="password_2">
                     </div>
     
                     <div class="kp">
@@ -103,7 +143,7 @@
     
                     <!-- button -->
                     <div class="btn">
-                        <input type="button" value="Login">
+                        <input type="Submit" name="Submit" id="Submit" value="Sign Up">
                     </div>
                     <p class="ask">Don't have an account? Create one <a href="">here</a></p>
                 </form>
