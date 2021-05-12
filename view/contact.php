@@ -34,13 +34,10 @@
             <!-- nav links -->
             <nav>
                 <ul class="navlinks">
-                    <li><a href="homepage.html" class=" links">Home</a></li>
-                    <li><a href="about.html" class=" links">About Us</a></li>
-                    <li><a href="services.html" class=" links">Services</a></li>
-                    <li><a href="team.html" class=" links">Team</a></li>
-                    <li><a href="contact.html" class=" links">Contact Us</a></li>
-                    <li><a href="login.html" class=" links">Login</a></li>
-                    <li id="createacc"><a href="signup.html" class="links">Create account</a></li>
+                    <li><a href="homepage.php" class="links">Home</a></li>
+                    <li><a href="contact.php" class=" links">Contact Us</a></li>
+                    <li><a href="login.php" class=" links">Login</a></li>
+                    <li id="createacc"><a href="signup.php" class="links">Create account</a></li>
                 </ul>
             </nav>
             <!-- end of nav links -->
