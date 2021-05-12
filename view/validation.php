@@ -4,7 +4,9 @@ $Name="";
 $Email="";
 $errors=array();
 
-include 'dbconnection.php';
+include '../dbCredentials.php';
+$database = mysqli_connect(SERVER, USERNAME, PASSWD, DATABASE) or die(mysqli_error($database));
+
 
 if(isset($_POST['Submit'])){
     $email = $_POST['email'];
@@ -22,10 +24,10 @@ if(isset($_POST['Submit'])){
     }
     else {
         $password=md5($password_1);
-        $sql="INSERT INTO user (email,Password) VALUES ('$email','$password')";
+        $sql="INSERT INTO user (username, password) VALUES ('$email','$password')";
 
-        mysqli_query($link,$sql);
-        header('location:login.php');
+        mysqli_query($database, $sql);
+        header('location: login.php');
         
         
     }
@@ -44,14 +46,14 @@ if(isset($_POST['Login'])){
     
     if (count($errors)==0) { 
         $password=md5($password);
-        $query="SELECT * FROM user WHERE email='$email' AND Password='$password'";
+        $query="SELECT * FROM user WHERE username='$email' AND password='$password'";
         
-        $results1= mysqli_query($link,$query);
+        $results1= mysqli_query($database, $query);
 
         
         if ($row=mysqli_fetch_array($results1)) {
             $_SESSION['email'] = $email;
-            header('location:homepage.html');
+            header('location: userhome.php');
         }
         else{
             array_push($errors,"<span style='color: red;'>" .'Wrong username or password'. "</span>");
