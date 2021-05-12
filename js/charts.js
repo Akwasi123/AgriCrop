@@ -1,7 +1,8 @@
 /* chart.js chart examples */
 
 // chart colors
-var colors = ['#007bff','#28a745','#333333','#c3e6cb','#dc3545','#6c757d'];
+var colors = ['#007bff','#28a745','#333333','#c3e6cb','#dc3545','#e64a19'];
+var colors2 = ['#f44336','#4a148c','#2e7d32','#c3e6cb','#dc3545','#6c757d'];
 
 /* 3 donut charts */
 var donutOptions = {
@@ -11,12 +12,12 @@ var donutOptions = {
 
 // donut 1
 var chDonutData1 = {
-    labels: ['Bootstrap', 'Popper', 'Other'],
+    labels: ['Dog', 'Goats', 'Sheep'],
     datasets: [
       {
-        backgroundColor: colors.slice(0,3),
+        backgroundColor: colors2.slice(0,3),
         borderWidth: 0,
-        data: [74, 11, 40]
+        data: [70, 11, 29]
       }
     ]
 };
@@ -32,12 +33,12 @@ if (chDonut1) {
 
 // donut 2
 var chDonutData2 = {
-    labels: ['Wips', 'Pops', 'Dags'],
+    labels: ['Cows', 'Ox', 'Chicken'],
     datasets: [
       {
-        backgroundColor: colors.slice(0,3),
+        backgroundColor: colors.slice(1,4),
         borderWidth: 0,
-        data: [40, 45, 30]
+        data: [20, 45, 60]
       }
     ]
 };
@@ -52,12 +53,12 @@ if (chDonut2) {
 
 // donut 3
 var chDonutData3 = {
-    labels: ['Angular', 'React', 'Other'],
+    labels: ['Pig', 'Rabbit', 'Boar'],
     datasets: [
       {
-        backgroundColor: colors.slice(0,3),
+        backgroundColor: colors.slice(2,6),
         borderWidth: 0,
-        data: [21, 45, 55, 33]
+        data: [21, 65, 55]
       }
     ]
 };
@@ -72,10 +73,10 @@ if (chDonut3) {
 
 // donut 4
 var chDonutData4 = {
-    labels: ['Bootstrap', 'Popper', 'Other'],
+    labels: ['Rice', 'Millet', 'Maize'],
     datasets: [
       {
-        backgroundColor: colors.slice(0,3),
+        backgroundColor: colors.slice(1,3),
         borderWidth: 0,
         data: [74, 11, 40]
       }
@@ -93,10 +94,10 @@ if (chDonut4) {
 
 // donut 5
 var chDonutData5 = {
-    labels: ['Wips', 'Pops', 'Dags'],
+    labels: ['Cassava', 'Plantain', 'Malt'],
     datasets: [
       {
-        backgroundColor: colors.slice(0,3),
+        backgroundColor: colors2.slice(2,5),
         borderWidth: 0,
         data: [40, 45, 30]
       }
@@ -113,12 +114,12 @@ if (chDonut5) {
 
 // donut 6
 var chDonutData6 = {
-    labels: ['Angular', 'React', 'Other'],
+    labels: ['Barley', 'Yam', 'Ginger'],
     datasets: [
       {
         backgroundColor: colors.slice(0,3),
         borderWidth: 0,
-        data: [21, 45, 55, 33]
+        data: [30, 45, 65]
       }
     ]
 };
