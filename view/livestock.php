@@ -29,30 +29,30 @@
             </div>
             <!-- menu items -->
 
-            <div class="menu">
+            <a href="task.php" class="menu">
                 <img src="../assets/img/icons/icons8-todo-list-100.png" alt="">
                 <p>Tasks</p>
-            </div>
+            </a>
 
-            <div class="menu">
+            <a href="store.php" class="menu">
                 <img src="../assets/img/icons/icons8-buy-100.png" alt="">
                 <p>Store</p>
-            </div>
+            </a>
 
-            <div class="menu">
+            <a href="" class="menu">
                 <img src="../assets/img/icons/icons8-increase-profits-100.png" alt="">
                 <p>Activity</p>
-            </div>
+            </a>
 
-            <div class="menu">
+            <a href="livestock.php" class="menu">
                 <img src="../assets/img/icons/icons8-cow-breed-100.png" alt="">
                 <p>Livestock</p>
-            </div>
+            </a>
 
-            <div class="menu">
+            <a href="crops.php" class="menu">
                 <img src="../assets/img/icons/icons8-corn-100.png" alt="">
                 <p>Crops</p>
-            </div>
+            </a>
         </div>
 
         <!-- right content -->
@@ -103,6 +103,8 @@
                                         echo "<td>" . $row['feedtype'] . "</td>";
                                         echo "<td>" . $row['price'] . "</td>";
                                         echo "<td>";
+                                            echo '<a href="read.php?id='. $row['id'] .'" class="mr-3" title="View Record" data-toggle="tooltip"><span class="fa fa-eye"></span></a>';
+                                            echo '<a href="update.php?id='. $row['id'] .'" class="mr-3" title="Update Record" data-toggle="tooltip"><span class="fa fa-pencil"></span></a>';
                                             echo '<a href="delete.php?id='. $row['id'] .'" title="Delete Record" data-toggle="tooltip"><span class="fa fa-trash"></span></a>';
                                         echo "</td>";
                                     echo "</tr>";

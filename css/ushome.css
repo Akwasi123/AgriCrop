@@ -136,14 +136,23 @@ body {
     width: 30%;
   }
 
-  .menu:hover {
+  .sidebar a{
+    display: block;
+    text-decoration: none;
+    color: black;
+  }
+
+  .sidebar a:hover {
+    text-decoration: none;
     cursor: pointer;
     background-color: #43a047;
+    color: white;
   }
 
   .logo p {
     display: block;
   }
+  
 
   .logo img {
     display: none;
