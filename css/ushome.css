@@ -31,13 +31,13 @@ body {
 }
 
 .right-side {
-  border: 1px solid green;
+
   width: 80%;
   margin-left: 20%;
 }
 
 .addNewTask-right-side {
-  border: 1px solid green;
+
   width: 100%;
 }
 .topbar {
@@ -47,7 +47,6 @@ body {
 
 .tasks {
   width: 95%;
-  border: 1px solid brown;
   padding: 20px;
   margin: 20px auto;
   height: 20vh;
@@ -136,13 +135,13 @@ body {
     width: 30%;
   }
 
-  .sidebar a{
+  .menu {
     display: block;
     text-decoration: none;
     color: black;
   }
 
-  .sidebar a:hover {
+  .menu:hover {
     text-decoration: none;
     cursor: pointer;
     background-color: #43a047;

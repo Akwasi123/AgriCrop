@@ -7,6 +7,7 @@
     <title>AgriCrop - User</title>
     <link rel="stylesheet" href="../css/navbar.css">
     <link rel="stylesheet" href="../css/ushome.css">
+    <link rel="stylesheet" href="../css/spec-footer.css">
     <link rel="stylesheet" href="../css/addNewTask.css">
     <link rel="stylesheet" href="../css/livestock.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -25,7 +26,7 @@
         <div class="sidebar">
             <div class="logo">
                 <img src="../assets/img/logo/Logo-black.png" alt="">
-                <p>AgriCrop</p>
+                <a href="userhome.php">AgriCrop</a>
             </div>
             <!-- menu items -->
 
@@ -39,7 +40,7 @@
                 <p>Store</p>
             </a>
 
-            <a href="" class="menu">
+            <a href="activity.php" class="menu">
                 <img src="../assets/img/icons/icons8-increase-profits-100.png" alt="">
                 <p>Activity</p>
             </a>
@@ -57,12 +58,43 @@
 
         <!-- right content -->
         <div class="right-side">
-            <!-- topbar -->
-            <div class="topbar">
-                <div class="settings">
-                    <img src="../assets/img/icons/icons8-settings-100.png" alt="">
+            <!-- navigation bar -->
+            <div class="navbar">
+                <!-- navbar content -->
+                <div class="container">
+                    <!-- navbar brand -->
+                    <a href="index.html" class="navbar-brand">
+                        <!-- logo -->
+                        <img src="../assets/img/logo/Layer 2.svg" alt="" width="50">
+                        <!-- company name -->
+                        <!-- <p class="brand">AgriCrop</p> -->
+                    </a>
+                    <!-- end of navbar brand -->
+
+                    <!-- hamburger menu -->
+                    <div class="burger">
+                        <div class="line1"></div>
+                        <div class="line2"></div>
+                        <div class="line3"></div>
+                    </div>
+
+                    <!-- nav links -->
+                    <nav>
+                        <ul class="navlinks">
+                            <li><a href="#home" class="links">Home</a></li>
+                            <li><a href="#about" class="links">About Us</a></li>
+                            <li><a href="#services" class="links">Services</a></li>
+                            <li><a href="team.html" class="links">Team</a></li>
+                            <li><a href="#contact" class="links">Contact Us</a></li>
+                            <li><a href="login.html" class="links">Login</a></li>
+                            <li id="createacc"><a href="signup.html" class="links">Create account</a></li>
+                        </ul>
+                    </nav>
+                    <!-- end of nav links -->
                 </div>
+                <!-- end of navbar content -->
             </div>
+            <!-- end of navigation bar -->
 
             <div class="container-fluid">
             <div class="row">
@@ -127,11 +159,11 @@
             </div>        
         </div>
 
-            <!-- footer -->
-            <div class="copyright">
-                <img src="../assets/img/icons/Icon awesome-copyright.svg" alt="">
-                <p>2021 AgriCrop</p>
-            </div>
+        <!-- footer -->
+        <div class="copyright">
+            <img src="../assets/img/icons/Icon awesome-copyright.svg" alt="">
+            <p>2021 AgriCrop</p>
+        </div>
     </div>
 
 </body>
