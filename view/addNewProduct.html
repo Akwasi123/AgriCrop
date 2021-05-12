@@ -16,28 +16,28 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-12">
-                    <h2 class="mt-5">Add New Task</h2>
-                    <p>Please fill this form and submit to add a new task record to the database.</p>
-                    <form action="addNewTask.php" method="POST">
+                    <h2 class="mt-5">Add New Product</h2>
+                    <p>Please fill this form and submit to add a new product to the database.</p>
+                    <form action="addNewProduct.php" method="POST">
                         <div class="form-group">
-                            <label>Title</label>
-                            <input type="text" name="title" class="form-control">
+                            <label>Product Name</label>
+                            <input type="text" name="pname" class="form-control">
                         </div>
                         <div class="form-group">
-                            <label>Due Date</label>
-                            <input type="date" name="date" class="form-control ">
+                            <label>Price</label>
+                            <input type="text" name="price" class="form-control ">
+                        </div>
+                        <div class="form-group">
+                            <label>Status</label>
+                            <input type="text" name="status" class="form-control ">
                         </div>
                         <div class="form-group">
                             <label>Description</label>
-                            <input type="text" name="description" class="form-control ">
-                        </div>
-                        <div class="form-group">
-                            <label>Associated To</label>
-                            <input type="text" name="assignee" class="form-control">
+                            <textarea name="description" id="" cols="30" rows="10" class="form-control"></textarea>
                             
                         </div>
                         <input name="submit" type="submit" class="btn btn-primary" value="Submit">
-                        <a href="task.php" class="btn btn-secondary ml-2">Cancel</a>
+                        <a href="store.php" class="btn btn-secondary ml-2">Cancel</a>
                         
                     </form>
                 </div>
