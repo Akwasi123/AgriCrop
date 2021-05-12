@@ -77,10 +77,10 @@ if(isset($_POST["id"]) && !empty($_POST["id"])){
         $sql = "SELECT * FROM livestock WHERE id = ?";
         if ($stmt = mysqli_prepare($database, $sql)) {
             // Bind variables to the prepared statement as parameters
-            mysqli_stmt_bind_param($stmt, "i", $param_sex);
+            mysqli_stmt_bind_param($stmt, "i", $param_id);
 
             // Set parameters
-            $param_sex = $id;
+            $param_id = $id;
 
             // Attempt to execute the prepared statement
             if (mysqli_stmt_execute($stmt)) {
@@ -144,7 +144,7 @@ if(isset($_POST["id"]) && !empty($_POST["id"])){
                 <div class="row">
                     <div class="col-md-12">
                         <div class="page-header">
-                            <h2>Update Menu Item</h2>
+                            <h2>Update Livestock</h2>
                         </div>
                         <p>Please edit the input values and submit to update the menu.</p>
                         <form action="<?php echo htmlspecialchars(basename($_SERVER['REQUEST_URI'])); ?>" method="post">
