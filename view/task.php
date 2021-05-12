@@ -100,7 +100,7 @@
                     <div class="col-md-12">
                         <div class="mt-5 mb-3 clearfix">
                             <h2 class="pull-left">Task Details</h2>
-                            <a href="addNewTask.html" class="btn btn-success pull-right"><i class="fa fa-plus"></i> Add New Task</a>
+                            <a href="addNewTasks.php" class="btn btn-success pull-right"><i class="fa fa-plus"></i> Add New Task</a>
                         </div>
                         <?php
                         // Include config file
@@ -118,6 +118,7 @@
                                             echo "<th>Title</th>";
                                             echo "<th>Due Date</th>";
                                             echo "<th>Status</th>";
+                                            echo "<th>Assigned to</th>";
                                         echo "</tr>";
                                     echo "</thead>";
                                     echo "<tbody>";
@@ -127,6 +128,7 @@
                                             echo "<td>" . $row['title'] . "</td>";
                                             echo "<td>" . $row['duedate'] . "</td>";
                                             echo "<td>" . $row['status'] . "</td>";
+                                            echo "<td>" . $row['assignee'] . "</td>";
                                             echo "<td>";
                                                 echo '<a href="viewtask.php?id='. $row['id'] .'" class="mr-3" title="View Record" data-toggle="tooltip"><span class="fa fa-eye"></span></a>';
                                                 echo '<a href="updatetask.php?id='. $row['id'] .'" class="mr-3" title="Update Record" data-toggle="tooltip"><span class="fa fa-pencil"></span></a>';

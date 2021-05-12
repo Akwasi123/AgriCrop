@@ -99,7 +99,7 @@
                 <div class="col-md-12">
                     <div class="mt-5 mb-3 clearfix">
                         <h2 class="pull-left">Crop Details</h2>
-                        <a href="addNewCrops.html" class="btn btn-success pull-right"><i class="fa fa-plus"></i> Add New Crop</a>
+                        <a href="addNewCropss.php" class="btn btn-success pull-right"><i class="fa fa-plus"></i> Add New Crop</a>
                     </div>
                     <?php
                     // Include config file
