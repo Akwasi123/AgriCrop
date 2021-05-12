@@ -6,8 +6,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/navbar.css">
     <title>AgriCrop</title>
 </head>
 <body>
@@ -18,7 +18,7 @@
             <!-- navbar brand -->
             <a href="index.html" class="navbar-brand">
                 <!-- logo -->
-                <img src="../assets/img/logo/Layer 2.svg" alt="" width="50">
+                <img src="/assets/img/logo/Layer 2.svg" alt="" width="50">
                 <!-- company name -->
                 <p class="brand">AgriCrop</p>
             </a>
@@ -34,13 +34,13 @@
             <!-- nav links -->
             <nav>
                 <ul class="navlinks">
-                    <li><a href="homepage.html" class="links">Home</a></li>
-                    <li><a href="about.html" class="links">About Us</a></li>
-                    <li><a href="services.html" class="links">Services</a></li>
-                    <li><a href="team.html" class="links">Team</a></li>
-                    <li><a href="contact.html" class="links">Contact Us</a></li>
-                    <li><a href="login.html" class="links">Login</a></li>
-                    <li id="createacc"><a href="signup.html" class="links">Create account</a></li>
+                    <li><a href="homepage.php" class="links">Home</a></li>
+                    <li><a href="about.php" class="links">About Us</a></li>
+                    <li><a href="services.php" class="links">Services</a></li>
+                    <li><a href="team.php" class="links">Team</a></li>
+                    <li><a href="contact.php" class="links">Contact Us</a></li>
+                    <li><a href="login.php" class="links">Login</a></li>
+                    <li id="createacc"><a href="signup.php" class="links">Create account</a></li>
                 </ul>
             </nav>
             <!-- end of nav links -->
@@ -59,7 +59,7 @@
 
             <!-- illustration -->
             <div class="illustration">
-                <img src="../assets/img/illustration/Layer 2.svg" alt="" width="620">
+                <img src="/assets/img/illustration/Layer 2.svg" alt="" width="620">
             </div>
 
             <!-- closing text -->
@@ -70,6 +70,6 @@
         </section>
     </main>
 
-<script src="../js/index.js"></script>
+<script src="/js/index.js"></script>
 </body>
 </html>
