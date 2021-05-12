@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AgriCrop - User</title>
+    <title>AgriCrop - Crops</title>
     <link rel="stylesheet" href="../css/navbar.css">
     <link rel="stylesheet" href="../css/ushome.css">
     <link rel="stylesheet" href="../css/addNewTask.css">
@@ -16,8 +16,6 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
 <body>
-
-    <!-- end of navigation bar -->
 
     <!-- page content -->
     <div class="page-content">
@@ -69,7 +67,7 @@
                 <div class="col-md-12">
                     <div class="mt-5 mb-3 clearfix">
                         <h2 class="pull-left">Crop Details</h2>
-                        <a href="create.php" class="btn btn-success pull-right"><i class="fa fa-plus"></i> Add New Crop</a>
+                        <a href="addNewCrops.html" class="btn btn-success pull-right"><i class="fa fa-plus"></i> Add New Crop</a>
                     </div>
                     <?php
                     // Include config file

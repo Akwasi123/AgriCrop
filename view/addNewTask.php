@@ -12,7 +12,7 @@
 // This checks if the users clicked on the button before landing here.
     if (isset($_POST['submit'])) {
         $title = trim(filter_input(INPUT_POST, 'title'));
-        $duedate = trim(filter_input(INPUT_POST, 'duedate'));
+        $duedate = trim(filter_input(INPUT_POST, 'date'));
         $assignee = trim(filter_input(INPUT_POST, 'assignee'));
         $description = trim(filter_input(INPUT_POST, 'description'));
 
@@ -27,7 +27,7 @@
       //check whether image upload is successful and has been moved to image path
         if ($query) {
 
-            header('location: userhome.php');
+            header('location: task.php');
         }else{
             $message = "There was an error.";
             echo $message;

@@ -1,108 +1,69 @@
+
+
+
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AgriCrop - User</title>
-    <link rel="stylesheet" href="../css/navbar.css">
-    <link rel="stylesheet" href="../css/ushome.css">
-    <link rel="stylesheet" href="../css/addNewTask.css">
-    <link rel="stylesheet" href="../css/livestock.css">
+    <title>Add New Task</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .wrapper{
+            width: 600px;
+            margin: 0 auto;
+        }
+    </style>
 </head>
-
 <body>
+    <div class="wrapper">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="mt-5">Add New Crop</h2>
+                    <p>Please fill this form and submit to add a new task record to the database.</p>
+                    <form action="addNewCrops.php" name="addNewCrops" id="addNewCrops" method="POST" enctype="multipart/form-data">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" placeholder="Enter the crop name." class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="plantspacing">Plant Spacing</label>
+                            <input type="text" id="plantspacing" name="plantspacing" placeholder="Enter Plant Spacing." class="form-control">
+                        
+                        </div>
 
-    <!-- end of navigation bar -->
+                        <div class="form-group">
+                            <label for="rowspacing">Row Spacing</label>
+                            <input type="text" id="rowspacing" name="rowspacing" placeholder="Enter Row Spacing." class="form-control">
+                        </div>
 
-    <!-- page content -->
-    <div class="form-content">
-
-
-        <!-- right content -->
-        <div class="addNewTask-right-side">
-            <!-- topbar -->
-            <div class="topbar">
-                <div class="settings">
-                    <img src="../assets/img/icons/icons8-settings-100.png" alt="">
+                        <div class="form-group">
+                            <label for="plantingdepth">Planting Depth</label>
+                            <input type="text" id="plantingdepth" name="plantingdepth" placeholder="Enter Planting Depth." class="form-control">
+                        </div>
+                            
+                        <div class="form-group">
+                            <label for="plantdate">Plant Date</label>
+                            <input type="date" id="plantdate" name="plantdate" placeholder="Enter Planting Date." class="form-control">
+                        </div>
+                            
+                        <div class="form-group">
+                            <label for="harvestdate">Harvest Date</label>
+                            <input type="date" id="harvestdate" name="harvestdate" placeholder="Enter Harvesting Date." class="form-control">
+                        </div>
+                            
+                        <div class="form-group">
+                            <label for="harvestunit">Harvest Unit</label>
+                            <input type="number" id="harvestunit" name="harvestunit" placeholder="Enter the Harvest Unit." class="form-control">
+                        </div>
+                            
+                        <input name="submit" type="submit" class="btn btn-primary" value="Submit">
+                        <a href="crops.php" class="btn btn-secondary ml-2">Cancel</a>
+                        
+                    </form>
                 </div>
-            </div>
-
-
-            <div class="livestock-form">
-                <form action="addNewCrops.php" name="addNewCrops" id="addNewCrops" method="POST" enctype="multipart/form-data">
-                    <div class="row">
-                        <label for="name">Name</label>
-                        <div class="input">
-                            <input type="text" id="name" name="name" placeholder="Enter the crop name.">
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <label for="plantspacing">Plant Spacing</label>
-                        <div class="input">
-                            <input type="text" id="plantspacing" name="plantspacing" placeholder="Enter Plant Spacing.">
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <label for="rowspacing">Row Spacing</label>
-                        <div class="input">
-                            <input type="text" id="rowspacing" name="rowspacing" placeholder="Enter Row Spacing.">
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <label for="plantingdepth">Planting Depth</label>
-                        <div class="input">
-                            <input type="text" id="plantingdepth" name="plantingdepth" placeholder="Enter Planting Depth.">
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <label for="plantdate">Plant Date</label>
-                        <div class="input">
-                            <input type="date" id="plantdate" name="plantdate" placeholder="Enter Planting Date.">
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <label for="harvestdate">Harvest Date</label>
-                        <div class="input">
-                            <input type="date" id="harvestdate" name="harvestdate" placeholder="Enter Harvesting Date.">
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <label for="harvestunit">Harvest Unit</label>
-                        <div class="input">
-                            <input type="number" id="harvestunit" name="harvestunit" placeholder="Enter the Harvest Unit.">
-                        </div>
-                    </div>
-
-                    
-
-                    
-                    <div class="input">
-                        <button type="submit" name="submit" value="submit">Submit</button>
-                    </div>
-
-                </form>
-
-
-
-            </div>
-
+            </div>        
         </div>
     </div>
-    <!-- footer -->
-    <div class="footer-style">
-        <img src="../assets/img/icons/Icon awesome-copyright.svg" alt="">
-        <p>2021 AgriCrop</p>
-    </div>
-
-
 </body>
-
 </html>
