@@ -97,7 +97,7 @@ if(isset($_GET["id"]) && !empty(trim($_GET["id"]))){
                     </div>
                     <div class="form-group">
                         <label>Harvest Date</label>
-                        <p><b><?php echo $row["Harvest Date"]; ?></b></p>
+                        <p><b><?php echo $row["harvestdate"]; ?></b></p>
                     </div>
                     <div class="form-group">
                         <label>Harvest Unit</label>
