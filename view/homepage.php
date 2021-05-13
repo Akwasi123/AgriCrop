@@ -64,7 +64,7 @@
 
             <!-- closing text -->
             <div class="c-text">
-                <p class="medium medium-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p class="medium medium-left">Farm the revolutionized way and make profit from the comfort of your home.</p>
                 <input type="button" value="Login" onclick="document.location.href='login.php'" id="login">
             </div>
         </section>
@@ -75,8 +75,7 @@
             <div class="ab-content">
                 <p class="heading ab-heading">About AgriCrop</p>
 
-                <p class="medium medium-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p> 
-                <p class="medium medium-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p> 
+                <p class="medium medium-left">Farm digitally and monitor your farm activities from your mobile devices. Choose a buyer of your choice from a selection of vetted buyers to sell your harvested crops, and receive insights and real-time monitoring of your farm processes from land preparation to post-harvest results.</p> 
             </div>
 
             <!-- illustration -->
@@ -225,7 +224,7 @@
 
                 <!-- closing text -->
                 <div class="c-text">
-                    <p class="medium medium-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <p class="medium medium-left">Get access to proprietary cultivation protocols developed by Complete Farmer, and farm with precision through the use of satellite and IoT technologies that collect crop insights that are used in optimizing crop growth, supply chains, and farm management, to meet export market demands.</p>
                     <input type="button" value="Sign Up now!" onclick="document.location.href='signup.php'">
                 </div>
             </div>

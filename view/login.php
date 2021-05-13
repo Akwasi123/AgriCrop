@@ -24,7 +24,7 @@
 
             <!-- message -->
             <p class="log-msg">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam assumenda aspernatur illo commodi quis nisi vel ad id necessitatibus, quia blanditiis optio nulla vo
+            Farm the revolutionized way and make profit from the comfort of your home.
             </p>
 
             <!-- illustration -->
@@ -77,7 +77,7 @@
     
                 <p class="sub-text"><strong>Login to enjoy the full agricultural experience</strong></p>
     
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat,<br class="break"> corrupti! Modi voluptate </p>
+                <p>Procure agriculture commodities. Build your supply chain from the farm to your warehouse.<br class="break"> corrupti! Modi voluptate </p>
                 <form action="" method="post">
                 <?php include ('errors.php'); ?>
 

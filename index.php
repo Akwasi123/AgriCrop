@@ -64,7 +64,7 @@
 
             <!-- closing text -->
             <div class="c-text">
-                <p class="medium medium-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p class="medium medium-left">Enabling stakeholders across the agriculture value chain to connect and gain a competitive advantage using disruptive technologies.</p>
                 <input type="button" value="Learn more" onclick="document.location.href='view/homepage.php'">
             </div>
         </section>

@@ -115,7 +115,7 @@
     
                 <p class="sub-text"><strong>Login to enjoy the full agricultural experience</strong></p>
     
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat,<br class="break"> corrupti! Modi voluptate </p>
+                <p>Farm the revolutionized way and make profit from the comfort of your home.<br class="break"> corrupti! Modi voluptate </p>
                 <form onsubmit="return valid()"  action="" method="post">  
                 <?php include ('errors.php'); ?>
                  <div class="field">
