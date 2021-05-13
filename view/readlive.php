@@ -99,7 +99,7 @@ if(isset($_GET["id"]) && !empty(trim($_GET["id"]))){
                     </div>
                     <div class="form-group">
                         <label>Tag number</label>
-                        <p><b><?php echo $row["Tag number"]; ?></b></p>
+                        <p><b><?php echo $row["tagnumber"]; ?></b></p>
                     </div>
                     <div class="form-group">
                         <label>Weight</label>
